@@ -3,299 +3,207 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>wonseokey | 신입 개발자 포트폴리오</title>
-  <meta name="description" content="신입 개발자 포트폴리오 - DevOps & Full‑stack Projects" />
-  <style>
-    :root{
-      --bg: #0b0e14; /* deep blue-black */
-      --panel: #111624;
-      --muted: #99a2b2;
-      --text: #e6edf7;
-      --brand: #6ea8fe;
-      --accent: #a78bfa;
-      --ok: #78d8a0;
-      --chip: #1b2338;
-      --card: #0f1526;
-      --border: #1f2740;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;}
-    a{color:var(--brand);text-decoration:none}
-    a:hover{opacity:.9;text-decoration:underline}
-    .wrap{max-width:1100px;margin:0 auto;padding:28px}
-    header{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;padding:18px 22px;background:linear-gradient(180deg,var(--panel),rgba(17,22,36,.2));border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow)}
-    .brand{display:flex;gap:16px;align-items:center}
-    .avatar{width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,#222c4a,#1b2747);display:flex;align-items:center;justify-content:center;font-weight:800;color:#cfe0ff;border:1px solid var(--border)}
-    .title h1{margin:0;font-size:1.5rem;letter-spacing:.2px}
-    .title p{margin:4px 0 0;color:var(--muted)}
-    .links{display:flex;gap:14px;flex-wrap:wrap}
-    .btn{padding:10px 14px;border:1px solid var(--border);border-radius:12px;background:var(--chip);display:inline-flex;gap:8px;align-items:center}
-    .btn:hover{border-color:#33406b}
-
-    nav{position:sticky;top:10px;margin:18px 0;z-index:5}
-    .tabs{display:flex;gap:10px;flex-wrap:wrap}
-    .tab{padding:10px 12px;border:1px solid var(--border);border-radius:12px;background:var(--panel);cursor:pointer}
-    .tab.active{background:var(--brand);color:#0b0f1a;border-color:transparent}
-
-    section{margin:24px 0;padding:22px;border:1px solid var(--border);border-radius:18px;background:var(--card);box-shadow:var(--shadow)}
-    section h2{margin:0 0 16px;font-size:1.25rem}
-
-    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
-    .col-12{grid-column:span 12}
-    @media(min-width:900px){
-      .col-4{grid-column:span 4}
-      .col-8{grid-column:span 8}
-      .col-6{grid-column:span 6}
-    }
-
-    .chips{display:flex;flex-wrap:wrap;gap:8px}
-    .chip{background:var(--chip);border:1px solid var(--border);padding:6px 10px;border-radius:999px;font-size:.9rem;white-space:nowrap}
-
-    .card{border:1px solid var(--border);border-radius:16px;background:linear-gradient(180deg,var(--panel),rgba(21,26,42,.55));padding:16px}
-    .card h3{margin:0 0 8px;font-size:1.05rem}
-    .muted{color:var(--muted)}
-    .meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:.92rem}
-
-    .project{display:grid;grid-template-columns:1fr;gap:12px;padding:16px;border:1px solid var(--border);border-radius:16px;background:linear-gradient(180deg,#121a2e,#0e1426)}
-    .project .links{gap:8px}
-    .project .links a.btn{padding:8px 10px}
-    .project h3{margin:0;font-size:1.08rem}
-    .bullets{margin:8px 0 0;padding-left:18px}
-    .bullets li{margin:6px 0}
-
-    footer{margin:32px 0;color:var(--muted);text-align:center}
-
-    /* print */
-    @media print{
-      nav,.tabs,.btn{display:none!important}
-      body{background:#fff;color:#000}
-      section,header{box-shadow:none;border-color:#ddd;background:#fff}
-      a{color:#000;text-decoration:none}
-      .wrap{padding:0}
-    }
-  </style>
+  <title>wonseokey | Manufacturing DevOps Engineer</title>
+  <meta name="description" content="제조업(자동차) 도메인에 특화된 DevOps 엔지니어 포트폴리오: 내부망 운영, Jenkins/PM2, Windows·Ubuntu, Node.js/React, MariaDB, Elasticsearch, 자동화 파이프라인" />
+  <link rel="canonical" href="https://won-seokey.github.io/index.html" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#0b0e14" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>⚙️</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"wonseokey",
+    "jobTitle":"DevOps Engineer",
+    "knowsAbout":["DevOps","CI/CD","Jenkins","PM2","Node.js","React","MariaDB","Elasticsearch","Windows","Ubuntu","Internal Network","Manufacturing IT"],
+    "url":"https://won-seokey.github.io/index.html",
+    "email":"mailto:wonseokey@gmail.com",
+    "sameAs":["https://github.com/won-seokey"]
+  }
+  </script>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="avatar">WS</div>
-        <div class="title">
-          <h1>wonseokey · Junior DevOps & Full‑stack Developer</h1>
-          <p>문제정의 → 자동화 → 가시화에 강한 신입 개발자. 내부망·Windows/Ubuntu 혼합 환경 경험.</p>
-        </div>
+  <header class="site-header">
+    <div class="brand">
+      <div class="avatar" aria-hidden="true">WS</div>
+      <div>
+        <h1>wonseokey · DevOps Engineer (Manufacturing)</h1>
+        <p class="tagline">내부망·Windows/Ubuntu 혼합 환경에서 <strong>자동화·관측성·무중단 운영</strong>을 구현합니다.</p>
+        <p class="subtle">자동차 제조사 경험 | Node.js · React · MariaDB · Elasticsearch · Jenkins · PM2</p>
       </div>
-      <div class="links">
-        <!-- TODO: 본인 정보로 교체 -->
-        <a class="btn" href="mailto:you@example.com">📧 you@example.com</a>
-        <a class="btn" href="#" target="_blank">🐙 GitHub</a>
-        <a class="btn" href="#" target="_blank">🔗 LinkedIn/블로그</a>
-        <a class="btn" href="#projects">📁 주요 프로젝트</a>
-      </div>
-    </header>
-
-    <nav>
-      <div class="tabs">
-        <a class="tab active" href="#about">소개</a>
-        <a class="tab" href="#skills">보유 기술</a>
-        <a class="tab" href="#projects">프로젝트</a>
-        <a class="tab" href="#experience">경험</a>
-        <a class="tab" href="#education">학력/자격</a>
-      </div>
+    </div>
+    <nav class="top-links">
+      <a class="btn" href="mailto:you@example.com" aria-label="이메일로 연락하기">📧 wonseokey@gmail.com</a>
+      <a class="btn" href="https://github.com/won-seokey" target="_blank" rel="noreferrer">🐙 GitHub</a>
+      <a class="btn" href="#projects">📁 프로젝트</a>
+      <button id="themeToggle" class="btn" type="button" aria-pressed="false">🌓 테마</button>
     </nav>
+  </header>
 
-    <section id="about">
-      <h2>👋 소개</h2>
-      <div class="grid">
-        <div class="col-8 col-12">
-          <p>신입 개발자 <strong>wonseokey</strong>입니다. 사내 이슈 관리 시스템, IoT 온습도 대시보드, 사내 지표 대시보드 등 <strong>실사용</strong> 서비스를 기획·개발·배포까지 완주했습니다. Windows/Ubuntu 혼합 환경에서 <strong>Node.js + React + MariaDB</strong> 풀스택과 <strong>Python</strong> 자동화, <strong>Elasticsearch</strong> 검색을 다룹니다. “데이터 수집 → 처리/저장 → 검색/시각화 → 알림/운영자동화” 전체 흐름을 만드는 것을 좋아합니다.</p>
-          <p class="muted">관심사: 내부망 환경 자동화, 로그/지표 수집·검색, PDF 문서 처리, DevOps 워크플로우, 사용자 친화적 대시보드 설계</p>
-        </div>
-        <div class="col-4 col-12">
-          <div class="card">
-            <h3>핵심 키워드</h3>
-            <div class="chips" style="margin-top:8px">
-              <span class="chip">Node.js</span>
-              <span class="chip">React</span>
-              <span class="chip">Python</span>
-              <span class="chip">MariaDB</span>
-              <span class="chip">Elasticsearch</span>
-              <span class="chip">Jenkins</span>
-              <span class="chip">PM2</span>
-              <span class="chip">Windows/Ubuntu</span>
-              <span class="chip">자동화</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2>🛠️ 보유 기술</h2>
-      <div class="grid">
-        <div class="col-6 col-12">
-          <div class="card">
-            <h3>Backend & DevOps</h3>
-            <ul class="bullets">
-              <li><strong>Node.js (Express)</strong>: REST API, 파일 업로드(Multer), 프로세스 관리(PM2), 내부망 배포</li>
-              <li><strong>Python</strong>: PDF 파싱(PyMuPDF), 크롤링(Selenium/requests), 로그 분석, 멀티프로세싱</li>
-              <li><strong>DB</strong>: MariaDB(스키마 설계·트리거·최적화), ORM/쿼리, 연결관리 개선</li>
-              <li><strong>Search</strong>: Elasticsearch 8.x (nori), 인덱싱·쿼리, 실시간 추천</li>
-              <li><strong>CI/CD & Ops</strong>: Jenkins, Windows 서비스(NSSM), 무중단/자동 재기동</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-6 col-12">
-          <div class="card">
-            <h3>Frontend & Data</h3>
-            <ul class="bullets">
-              <li><strong>React</strong> (Router, Context API), 모듈형 컴포넌트, 상태 관리</li>
-              <li><strong>차트/시각화</strong>: 커스텀 HTML/CSS, Frappe Gantt, Toast UI Grid</li>
-              <li><strong>통신</strong>: Socket.io(실시간), Fetch/Axios</li>
-              <li><strong>품질</strong>: 로깅, 알림(Nodemailer), 사용자 피드백 반영</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <p class="muted">※ 사용 환경: Windows 11/Ubuntu 20.04, Git(기초), Docker(기초), Proxmox(개인 실습)</p>
-    </section>
-
-    <section id="projects">
-      <h2>📁 주요 프로젝트</h2>
-
-      <!-- Project 1 -->
-      <div class="project" data-tags="fullstack search pdf devops">
-        <div class="meta"> <span>2025</span> • <span>Full‑stack / DevOps</span> </div>
-        <h3>eTicket – 사내 이슈·요청 관리 시스템</h3>
-        <p class="muted">Node.js(Express), React, MariaDB, <strong>Elasticsearch 8.x</strong>, Python(PyMuPDF), Socket.io</p>
-        <ul class="bullets">
-          <li>PDF 업로드 → Python으로 <strong>콘텐츠/티켓 자동 추출</strong> → DB/ES 저장 → <strong>실시간 유사 글 추천</strong></li>
-          <li>검색 정확도 향상을 위해 <strong>ES nori</strong> 적용, <strong>ES↔DB 조인형 조회</strong> 구성</li>
-          <li>내부망 배포: React 정적 빌드 Express 서빙, <strong>PM2</strong>로 무중단 운영, 재부팅 자동복구</li>
-        </ul>
-        <div class="links">
-          <a class="btn" href="#" target="_blank">🔎 코드/시연 링크</a>
-          <a class="btn" href="#" target="_blank">🗒 상세 문서</a>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project" data-tags="iot dashboard alert">
-        <div class="meta"> <span>2025</span> • <span>IoT Dashboard</span> </div>
-        <h3>Probe Dashboard – 사내 서버실 온습도 모니터링</h3>
-        <p class="muted">React, Node.js, MariaDB, Shelly H&T Gen3, Nodemailer</p>
-        <ul class="bullets">
-          <li>센서 데이터 실시간 수집/저장, <strong>임계치 초과 이메일 알림</strong> 및 현황 대시보드</li>
-          <li>임계치/알림 이메일 <strong>관리 UI</strong> 제공(권한 보호), 이전 설정 자동 로딩</li>
-          <li>생산 환경: 내부망, 고정 IP, 무클라우드 의존</li>
-        </ul>
-        <div class="links">
-          <a class="btn" href="#" target="_blank">📸 스크린샷</a>
-          <a class="btn" href="#" target="_blank">🗒 상세 문서</a>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="project" data-tags="crawler data">
-        <div class="meta"> <span>2025</span> • <span>Data / Full‑stack</span> </div>
-        <h3>NASDDAK – 기업 핵심정보 대시보드</h3>
-        <p class="muted">React, Node.js, MariaDB, Python 크롤링(셀레니움/파서)</p>
-        <ul class="bullets">
-          <li>기업 검색 → 5년 고용 트렌드, 급여, 평판, 투자 이력 등을 <strong>통합 시각화</strong></li>
-          <li>크롤러/수집 → 정제 → 저장 → 조회 API → 프론트 시각화 파이프라인 설계</li>
-        </ul>
-        <div class="links">
-          <a class="btn" href="#" target="_blank">🔗 Demo/Repo</a>
-        </div>
-      </div>
-
-      <!-- Project 4 -->
-      <div class="project" data-tags="dashboard visualization">
-        <div class="meta"> <span>2025</span> • <span>Visualization</span> </div>
-        <h3>WBS Gantt Dashboard – Jenkins 빌드형 HTML 리포트</h3>
-        <p class="muted">HTML/CSS/JS, Toast UI Grid, Frappe Gantt</p>
-        <ul class="bullets">
-          <li>프로젝트/서브프로젝트 트리 + <strong>동적 간트 차트</strong> 렌더링</li>
-          <li><strong>정적 HTML</strong> 생성(빌드 타임) → 경량 배포, 운영 부하 최소화</li>
-        </ul>
-      </div>
-
-      <!-- Project 5 -->
-      <div class="project" data-tags="python automation">
-        <div class="meta"> <span>2025</span> • <span>Automation</span> </div>
-        <h3>Windows 성능 로그(.blg) 대량 분석 자동화</h3>
-        <p class="muted">Python, relog, 멀티프로세싱, pandas</p>
-        <ul class="bullets">
-          <li>.blg → CSV 변환 → CPU/메모리/디스크/페이지파일 통계 산출 및 Excel 리포트</li>
-          <li>5대 서버, 장기간(수개월) 데이터 병렬 처리, 진행률 표시(tqdm)</li>
-        </ul>
-      </div>
-
-      <!-- Project 6 (optional) -->
-      <div class="project" data-tags="opencv hardware">
-        <div class="meta"> <span>개인</span> • <span>Vision & 하드웨어</span> </div>
-        <h3>게임 자동 플레이 로봇(연구용)</h3>
-        <p class="muted">OpenCV, Arduino Pro Micro(키보드 에뮬)</p>
-        <ul class="bullets">
-          <li>움직임 감지 → 방향/공격 키 조합 입력 자동화(인간적 딜레이 적용)</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="experience">
-      <h2>💼 경험</h2>
-      <div class="grid">
-        <div class="col-12">
-          <div class="card">
-            <h3>사내 IT/DevOps 개발 참여</h3>
-            <ul class="bullets">
-              <li>내부망 운영 제약(외부 클라우드 미사용) 하에서 서비스 기획·개발·배포 전 과정 수행</li>
-              <li>Jenkins/PM2/NSSM 활용한 <strong>재기동·무중단 운영</strong>과 로그 기반 <strong>장애 대응</strong></li>
-              <li>PDF 처리 파이프라인 및 ES 검색 품질 개선(형태소 분석, 조합 쿼리)</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="card">
-            <h3>교육/강의(선택)</h3>
-            <ul class="bullets">
-              <li>초·중등 코딩 수업 및 강의 자료 제작(HTML/CSS/알고리즘 체험형)</li>
-              <li>기술 문서화: 컨플루언스 활용해 <strong>운영 매뉴얼/설계서</strong> 작성</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education">
-      <h2>🎓 학력/자격</h2>
-      <ul class="bullets">
-        <li><strong>학력</strong>: (예시) ○○대학교 컴퓨터공학 전공, 20XX–20XX</li>
-        <li><strong>자격</strong>: (예시) 정보처리기사 / SQLD / 리눅스마스터(선택)</li>
-        <li><strong>기타</strong>: (선택) 영어/일본어 독해(문서), 기술 블로그 운영</li>
+  <main>
+    <!-- 소개 -->
+    <section id="about" class="card">
+      <h2>소개</h2>
+      <p>
+        제조업(자동차) 환경의 제약(내부망, 외부 클라우드 미사용, Windows/Ubuntu 혼합, 보안/감사 요구)을 고려한
+        <strong>CI/CD 파이프라인</strong>, <strong>로그/지표 수집·검색</strong>, <strong>대시보드</strong>,
+        <strong>무중단 운영</strong> 체계를 설계·구현했습니다. 사용자 관점에서 <em>문제정의 → 자동화 → 가시화</em>의
+        전 과정을 책임지고 완주합니다.
+      </p>
+      <ul class="inline-chips" aria-label="핵심 키워드">
+        <li>Jenkins</li><li>PM2</li><li>Express/Node.js</li><li>React</li><li>MariaDB</li>
+        <li>Elasticsearch(nori)</li><li>Windows/Ubuntu</li><li>내부망 배포</li><li>PDF 처리</li>
       </ul>
-      <p class="muted">※ 실제 이력에 맞게 수정하세요.</p>
     </section>
 
-    <footer>
-      <p>© <span id="year"></span> wonseokey · 포트폴리오 · <a href="#about">위로</a></p>
-      <p class="muted">PDF로 저장하려면 브라우저 인쇄(Ctrl/Cmd+P) → PDF 저장을 사용하세요.</p>
-    </footer>
-  </div>
+    <!-- 기술 스택 -->
+    <section id="skills" class="grid">
+      <article class="card">
+        <h2>기술 스택</h2>
+        <div class="cols">
+          <div>
+            <h3>DevOps · 인프라</h3>
+            <ul class="bullets">
+              <li><strong>CI/CD</strong>: Jenkins 멀티스테이지(빌드→테스트→배포), 아티팩트 관리</li>
+              <li><strong>런타임</strong>: PM2 무중단/헬스체크, Windows 서비스(NSSM), 서비스 자가복구</li>
+              <li><strong>OS</strong>: Windows 11/Server, Ubuntu 20.04.5 LTS 공존 운영</li>
+              <li><strong>관측성</strong>: 애플리케이션/접속 로그, 상태 알림(메일/Teams)</li>
+            </ul>
+          </div>
+          <div>
+            <h3>애플리케이션 · 데이터</h3>
+            <ul class="bullets">
+              <li><strong>Backend</strong>: Node.js(Express), 파일업로드, 인증, REST API</li>
+              <li><strong>Frontend</strong>: React(Router/Context), 차트/그리드</li>
+              <li><strong>DB</strong>: MariaDB 스키마/인덱스/트리거, 연결관리 안정화</li>
+              <li><strong>Search</strong>: Elasticsearch 8.x(nori) · 실시간 추천/검색</li>
+              <li><strong>Python</strong>: PyMuPDF PDF 파이프라인, 크롤링, 로그 분석</li>
+            </ul>
+          </div>
+        </div>
+        <p class="subtle">추가: Git(기초), Docker(기초), Proxmox(개인 실습)</p>
+      </article>
+    </section>
 
-  <script>
-    // 활성 탭 표시
-    const tabs = document.querySelectorAll('.tab');
-    function setActive(){
-      const hash = location.hash || '#about';
-      tabs.forEach(t=>t.classList.toggle('active', t.getAttribute('href')===hash));
-    }
-    window.addEventListener('hashchange', setActive);
-    setActive();
+    <!-- 프로젝트 -->
+    <section id="projects" class="card">
+      <div class="section-head">
+        <h2>프로젝트</h2>
+        <div class="filters" role="toolbar" aria-label="프로젝트 필터">
+          <button class="chip is-active" data-filter="all">전체</button>
+          <button class="chip" data-filter="devops">DevOps</button>
+          <button class="chip" data-filter="dashboard">대시보드</button>
+          <button class="chip" data-filter="search">검색</button>
+          <button class="chip" data-filter="automation">자동화</button>
+        </div>
+      </div>
 
-    // 연도
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+      <!-- eTicket -->
+      <article class="project" data-tags="devops search dashboard">
+        <header class="project-head">
+          <h3>eTicket · 사내 이슈/요청 관리</h3>
+          <span class="meta">2025 · Full-stack / DevOps</span>
+        </header>
+        <p class="stack">Express/Node.js, React, MariaDB, <strong>Elasticsearch 8.x(nori)</strong>, Python(PyMuPDF), Socket.io</p>
+        <ul class="bullets">
+          <li>PDF 업로드 → Python으로 <strong>콘텐츠/티켓 자동 추출</strong> → DB/ES 인덱싱 → <strong>실시간 유사 글 추천</strong></li>
+          <li>내부망 배포: React 정적 빌드 Express 서빙, <strong>PM2</strong> 무중단, 재부팅 자동복구</li>
+          <li>ES↔DB 조인형 조회, nori 분석으로 한국어 검색 정확도 향상</li>
+        </ul>
+        <div class="project-links">
+          <a class="btn" href="#" target="_blank" rel="noreferrer">🔗 Repo/Demo</a>
+          <a class="btn" href="#" target="_blank" rel="noreferrer">🗒 기술 문서</a>
+        </div>
+      </article>
+
+      <!-- Probe Dashboard -->
+      <article class="project" data-tags="dashboard devops automation">
+        <header class="project-head">
+          <h3>Probe Dashboard · 서버실 온습도 모니터링</h3>
+          <span class="meta">2025 · IoT Dashboard</span>
+        </header>
+        <p class="stack">React, Node.js, MariaDB, Shelly H&T Gen3, Nodemailer</p>
+        <ul class="bullets">
+          <li>센서 실시간 수집/저장, <strong>임계치 초과 메일 알림</strong>, 관리자 보호 설정 UI</li>
+          <li>이전 설정 자동 로딩, 다중 알림 이메일, 내부망 고정 IP</li>
+        </ul>
+        <div class="project-links">
+          <a class="btn" href="#" target="_blank" rel="noreferrer">📸 스크린샷</a>
+          <a class="btn" href="#" target="_blank" rel="noreferrer">🔗 Repo</a>
+        </div>
+      </article>
+
+      <!-- NASDDAK -->
+      <article class="project" data-tags="dashboard automation">
+        <header class="project-head">
+          <h3>NASDDAK · 기업 핵심정보 대시보드</h3>
+          <span class="meta">2025 · Data/Full-stack</span>
+        </header>
+        <p class="stack">React, Node.js, MariaDB, Python 크롤러</p>
+        <ul class="bullets">
+          <li>기업 검색 → 고용/급여/평판/투자 이력 <strong>통합 시각화</strong></li>
+          <li>수집→정제→저장→API→시각화 파이프라인</li>
+        </ul>
+        <div class="project-links">
+          <a class="btn" href="#" target="_blank" rel="noreferrer">🔗 Demo</a>
+        </div>
+      </article>
+
+      <!-- WBS Gantt -->
+      <article class="project" data-tags="dashboard devops">
+        <header class="project-head">
+          <h3>WBS Gantt Dashboard · Jenkins 빌드형 HTML 리포트</h3>
+          <span class="meta">2025 · Visualization</span>
+        </header>
+        <p class="stack">HTML/CSS/JS, Toast UI Grid, Frappe Gantt</p>
+        <ul class="bullets">
+          <li>프로젝트 트리 + <strong>동적 간트 차트</strong>, 빌드 타임 정적 HTML 생성</li>
+          <li>경량 배포로 운영 부하 최소화</li>
+        </ul>
+      </article>
+
+      <!-- BLG Analyzer -->
+      <article class="project" data-tags="automation devops">
+        <header class="project-head">
+          <h3>Windows 성능 로그(.blg) 대량 분석 자동화</h3>
+          <span class="meta">2025 · Automation</span>
+        </header>
+        <p class="stack">Python, relog, pandas, 멀티프로세싱</p>
+        <ul class="bullets">
+          <li>.blg→CSV 변환, CPU/메모리/디스크/페이지파일 통계 → Excel 리포트 자동 생성</li>
+          <li>5대 서버, 수개월 데이터 병렬 처리, 진행률 표시(tqdm)</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- 경험 -->
+    <section id="experience" class="card">
+      <h2>경험</h2>
+      <ul class="bullets">
+        <li>내부망 제약 하 <strong>기획→개발→배포</strong> 전 과정 주도, 로그 기반 장애 대응 및 재발 방지</li>
+        <li><strong>Jenkins/PM2/NSSM</strong>로 무중단 운영 및 재기동 자동화</li>
+        <li>PDF 처리 파이프라인과 ES 검색 품질 개선(형태소, 조합 쿼리)</li>
+      </ul>
+    </section>
+
+    <!-- 학력/자격 -->
+    <section id="education" class="card">
+      <h2>학력/자격</h2>
+      <ul class="bullets">
+        <li><strong>학력</strong>: (예시) ○○대학교 컴퓨터공학</li>
+        <li><strong>자격</strong>: 정보처리기사 / SQLD / (선택) 리눅스마스터</li>
+        <li><strong>기타</strong>: 영어·일본어 문서 독해, 기술 블로그</li>
+      </ul>
+      <p class="subtle">※ 실제 이력에 맞게 수정하세요.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> wonseokey · Portfolio</p>
+    <a class="back-to-top" href="#top" aria-label="상단으로 이동">↑</a>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
