@@ -1,0 +1,15 @@
+title: "wonseokey"
+description: "Manufacturing DevOps Engineer"
+markdown: kramdown
+timezone: Asia/Seoul
+
+# (선택) 깔끔한 링크를 위해
+permalink: /:categories/:title/
+
+# 포스트 기본값: 레이아웃은 기본 post로 (프로젝트는 각 글에서 project로 오버라이드)
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
